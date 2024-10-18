@@ -1,5 +1,5 @@
 ---
-const { title = "Puchaina",msg = "Hello world" } = Astro.props;
+const { title = 'TE OLVIDASTE DEL TITULO!', msg = 'Hola mundo cruel' } = Astro.props;
 ---
 
 <!doctype html>
@@ -13,26 +13,23 @@ const { title = "Puchaina",msg = "Hello world" } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<header class="bg-blue-300 h-20">
-
+		<header class="bg-orange-400 h-20 ">
 		</header>
-		<menu class="bg-blue-400 flex items-center justify-center ">
+		<menu class="bg-blue-500 flex ">
 			<li>
-				<a href="/" class="hover:bg-white/25 block px-2">Home</a>
+				<a  class="hover:bg-white/25 px-2 block" href="/">Inicio</a>
 			</li>
 			<li>
-				<a href="/about-us" class="hover:bg-white/25 block px-2">About</a>
+				<a class="hover:bg-white/25 px-2 block" href="/quienes-somos" >Quines somos</a>
 			</li>
 			<li>
-				<a href="/organigrama" class="hover:bg-white/25 block px-2
-				">Organigrama</a>
+				<a class="hover:bg-white/25 px-2 block" href="/organigrama" >Organigrama</a>
 			</li>
 			<li>
-				<a href="/contact" class="hover:bg-white/25 block px-2
-				">Contact</a>
+				<a class="hover:bg-white/25 px-2 block" href="/contacto" >Contacto</a>
 			</li>
 		</menu>
-		<p>Tu mensaje es : {msg}</p>
+		<p>Tu mensaje es: {msg}</p>
 		<slot />
 	</body>
 </html>
